@@ -3,7 +3,7 @@ FROM archlinux:base
 RUN pacman -Syu --noconfirm
 RUN pacman -S --noconfirm --needed --overwrite '*' \
       openssh sudo \
-      git fakeroot binutils gcc awk binutils xz \
+      git fakeroot binutils gcc awk binutils xz debugedit \
       libarchive bzip2 coreutils file findutils \
       gettext grep gzip sed ncurses util-linux \
       pacman-contrib
